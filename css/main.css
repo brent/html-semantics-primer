@@ -1,0 +1,539 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Mono|PT+Serif:400,700|Oswald|Roboto:400,700,900|Source+Sans+Pro:400,700|Pacifico:400);
+
+* {
+  box-sizing: border-box;
+}
+
+.clear:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+body, p {
+  font: 16px "Source Sans Pro", sans-serif;
+}
+
+section {
+  text-align: center;
+  width: 100%;
+}
+
+.inner-block {
+  margin: 0 auto;
+  width: 62%;
+  padding: 100px 0;
+}
+
+abbr {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+pre {
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+code {
+  font-family: "PT Mono", monospace;
+  text-align: left;
+}
+
+em {
+  font-style: italic;
+}
+
+q:before {
+  content: "\201C";
+}
+
+q:after {
+  content: "\201D";
+}
+
+a {
+  color: #555363;
+}
+
+h3  {
+  color: #444;
+  font-family: Oswald, sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.tooltip {
+  background: rgba(0,0,0,0.8);
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+}
+
+.arrow-down {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0,0,0,0.8);
+  height: 5px;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: 10px;
+  position: absolute;
+  width: 5px;
+  bottom: -5px;
+}
+
+.hljs {
+  padding: 0 20px !important;
+}
+
+/***************************************
+ *
+ * Title
+ *
+ *************************************/
+
+.title-container {
+  background: #d81e36;
+  color: #fff;
+}
+
+.title-container h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 110px;
+  text-shadow: 5px 5px rgba(0,0,0,0.2);
+  line-height: 1.1;
+}
+
+.title-container hr {
+  background: transparent;
+  border: none;
+  margin: 40px 0 20px;
+}
+
+.title-container hr:after {
+  color: #8f0e1e;
+  content: "<></><></><></><></><></><></><></><></><></><></><></><></>";
+}
+
+.title-container h2 {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.33);
+}
+
+.title-container h2 span {
+  color: #ffd409;
+  font-weight: bold;
+}
+
+/***************************************
+ *
+ * Overview Questions
+ *
+ *************************************/
+
+.qa-group {
+  margin-bottom: 100px;
+}
+
+.qa-group:last-child {
+  margin-bottom: 0;
+}
+
+.overview-questions .overview-answer {
+  color: #777;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+
+/***************************************
+ *
+ * Markup Examples
+ *
+ *************************************/
+
+.markup-examples {
+  background: #eee;
+}
+
+.markup-example-2-up {
+  margin: 30px 0;
+}
+
+.markup-example-2-up:last-child {
+  margin-bottom: 0;
+}
+
+.markup-example-cols [class$=-col] {
+  float: left;
+}
+
+.markup-example-cols [class$=-col]:first-child {
+  margin-right: 40px;
+}
+
+.markup-example-right-col {
+  margin-top: -23px;
+}
+
+/***************************************
+ *
+ * Block vs Inline
+ *
+ *************************************/
+
+.block-inline {
+  background: #333;
+  color: #999;
+  font-size: 20px;
+  text-align: left;
+}
+
+.block-inline-title {
+  background: url('../img/block-vs-inline.png') no-repeat;
+  height: 199px;
+  margin: 0 auto 60px;
+  text-indent: -9999px;
+  width: 361px;
+}
+
+.element-intro {
+  color: #999;
+  font-size: 30px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.block-inline-cols {
+  margin-bottom: 40px;
+}
+
+.block-inline [class$=col] {
+  float: left;
+  width: 47%;
+}
+
+.block-col {
+  margin-right: 20px;
+}
+
+[class$=-col] {
+  font-size: 18px;
+}
+
+.inline-col {
+  margin: -9px 0 0 20px;
+}
+
+.element-description,
+.overview-list {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.element-description em {
+  color: #fff;
+  font-style: italic;
+}
+
+.block-element-intro span,
+.block-col .they-continuation {
+  color: #fff;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+  font-size: 30px;
+}
+
+.inline-element-intro {
+  margin-bottom: 19px;
+}
+
+.inline-element-intro span,
+.inline-col .they-continuation {
+  color: #fff;
+  font-family: Pacifico, cursive;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.they-continuation {
+  font-size: 30px;
+}
+
+.block-col .they-continuation {
+  margin: 30px 0 10px;
+}
+
+.block-inline .good-usage {
+  color: #b2e64e;
+  font-weight: bold;
+}
+
+.block-inline .bad-usage {
+  color: #de5b5b;
+  font-weight: bold;
+}
+
+.overview-list li {
+  margin-bottom: 7px;
+}
+
+.overview-list [class$=usage] {
+  font-size: 20px;
+}
+
+.block-inline-big-text {
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.block-inline .asterisk {
+  color: #fff;
+}
+
+p.asterisk-explanation {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.divs-spans {
+  margin-top: 50px;
+}
+
+.big-segue {
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 36px;
+  margin-bottom: 50px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.big-segue h3 {
+  color: inherit;
+}
+
+/***************************************
+ *
+ * Tag Glossary
+ *
+ *************************************/
+
+.tag-glossary-intro {
+  background: #00b0d7;
+  color: #b6e5f2;
+  text-align: center;
+}
+
+.tag-glossary-intro .inner-block {
+  padding: 30px 0;
+}
+
+.tag-glossary-intro h3 {
+  color: #fff;
+}
+
+.tag-glossary-intro p {
+  font-size: 20px;
+  margin: 0 auto 10px;
+}
+
+.tag-glossary {
+  background: #00b0d7;
+}
+
+.glossary-nav {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: absolute;
+  width: inherit;
+  width: inherit;
+  z-index: 999;
+}
+
+.glossary-nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.glossary-nav a {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.glossary-nav .nav-button {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.33);
+  color: #00b0d7;
+  display: block;
+  font-size: 24px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 160px;
+}
+
+.menu-point {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(34,34,34,0.95);
+  margin: -18px auto 0;
+}
+
+.tag-menu {
+  background: rgba(34,34,34,0.95);
+  border-radius: 3px;
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px;
+  width: 62%;
+}
+
+.tag-menu-hidden {
+  display: none;
+}
+
+.tag-menu a {
+  border-radius: 3px;
+  display: block;
+}
+
+.tag-menu a:hover {
+  background: #373f41;
+}
+
+.tag-menu ul {
+  float: left;
+  margin: 8px 8px 0 0;
+  width: 210px;
+}
+
+.tag-menu ul:last-child {
+  margin-right: 0;
+}
+
+.tag-menu li {
+  margin-bottom: 1px;
+}
+
+.tag-menu li code {
+  font-size: 14px;
+}
+
+.tag-example {
+  color: #b6e5f2;
+  font-family: Roboto, sans-serif;
+  font-size: 140px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.tag-description {
+  color: #fff;
+  font-family: "PT Serif", serif;
+  font-size: 24px;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+.tag-description:last-child {
+  margin-bottom: none;
+}
+
+.tag-description a {
+  color: #1d5a67;
+}
+
+.block-inline-label {
+  border-top: 1px solid #43cae8;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  margin: 15px auto 0;
+  padding-top: 5px;
+  text-align: center;
+  /*width: 248px;*/
+  width: 17%;
+}
+
+.block-inline-label li {
+  color: #1a6b7d;
+  display: inline;
+}
+
+.block-inline-label li:first-child:after {
+  color: #43cae8;
+  content: " | ";
+}
+
+.block-inline-label li.highlighted-type {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .title-container h1 {
+    font-size: 40px;
+  }
+
+  .title-container hr {
+    font-size: 6px;
+    margin: 10px 0;
+  }
+
+  .title-container h2 {
+    font-size: 12px;
+  }
+
+  .overview-questions .question {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .overview-questions .answer {
+    font-size: 14px;
+  }
+
+  .qa-group {
+    margin-bottom: 50px;
+  }
+
+  .block-inline [class$=col] {
+    float: none;
+  }
+
+  .inline-col {
+    margin-left: 0;
+  }
+
+  .tag-example {
+      font-size: 40px;
+  }
+
+  .tag-description {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .tag-glossary pre {
+    display: none;
+  }
+
+  .block-inline-label {
+    width: 42%;
+  }
+}
