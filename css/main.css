@@ -149,37 +149,6 @@ h3  {
   line-height: 1.25;
 }
 
-
-/***************************************
- *
- * Markup Examples
- *
- *************************************/
-
-.markup-examples {
-  background: #eee;
-}
-
-.markup-example-2-up {
-  margin: 30px 0;
-}
-
-.markup-example-2-up:last-child {
-  margin-bottom: 0;
-}
-
-.markup-example-cols [class$=-col] {
-  float: left;
-}
-
-.markup-example-cols [class$=-col]:first-child {
-  margin-right: 40px;
-}
-
-.markup-example-right-col {
-  margin-top: -23px;
-}
-
 /***************************************
  *
  * Block vs Inline
@@ -290,6 +259,10 @@ h3  {
   line-height: 1.5em;
 }
 
+.block-inline-big-text:nth-of-type(1) {
+  margin-bottom: 50px;
+}
+
 .block-inline .asterisk {
   color: #fff;
 }
@@ -300,17 +273,10 @@ p.asterisk-explanation {
   margin-top: 20px;
 }
 
-.divs-spans {
-  margin-top: 50px;
-}
-
 .big-segue {
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 36px;
-  margin-bottom: 50px;
   padding: 50px 0;
   text-align: center;
 }

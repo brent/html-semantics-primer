@@ -36,59 +36,6 @@
       </div><!-- END .inner-block -->
     </section><!-- END .overview-questions -->
 
-    <section class="block-inline">
-      <div class="inner-block">
-        <h3 class="block-inline-title">block vs inline</h3>
-
-        <p class="block-inline-big-text"><abbr title="Hypertext Markup Language">HTML</abbr>5 does away with the block/inline nomenclature and introduces a handful of different content categories&mdash;Metadata, Flow, Sectioning, Heading, Phrasing, Embedded, Interactive, and Form-associated. The elements in these new categories still <em>behave</em> like block or inline elements, though. Generally, block level content's closest analog is Flow content and inline's is Phrasing content.</p>
-
-        <div class="block-inline-cols clear">
-          <div class="block-col">
-            <p class="element-intro block-element-intro"><span>block</span> level elements&hellip;</p>
-            <p class="element-description">
-              <em>break up the flow of a document</em>. They cannot be placed next to other block level elements and create new lines above and below themselves.
-            </p>
-            <p class="they-continuation">they...</p>
-            <ul class="overview-list">
-              <li><span class="good-usage">can</span> be nested in other block elements</li>
-              <li><span class="good-usage">can</span> be given an explicit width/height</li>
-              <li><span class="good-usage">can</span> be floated<span class="asterisk">*</span></li>
-              <li><span class="good-usage">can</span> be positioned absolutely<span class="asterisk">*</span></li>
-              <li><span class="bad-usage">should not</span> be nested in inline elements</li>
-            </ul>
-          </div><!-- END .block-col -->
-          <div class="inline-col">
-            <p class="element-intro inline-element-intro"><span>inline</span> level elements&hellip;</p>
-            <p class="element-description">
-              <em>do not break up the flow of a document</em>. They can be placed next to other inline level elements and will not interrupt the flow inside of a block level parent.
-            </p>
-            <p class="they-continuation">they...</p>
-            <ul class="overview-list">
-              <li><span class="good-usage">can</span> be nested in block or inline elements</li>
-              <li><span class="bad-usage">cannot</span> be given an explicit width/height</li>
-              <li><span class="bad-usage">cannot</span> be floated<span class="asterisk">*</span></li>
-              <li><span class="bad-usage">cannot</span> be positioned absolutely<span class="asterisk">*</span></li>
-              <li><span class="bad-usage">should not</span> wrap block elements</li>
-            </ul><!-- END .overview-list -->
-          </div><!-- END .inline-col -->
-        </div><!-- END .cols -->
-
-        <p class="asterisk-explanation">
-        <span class="asterisk">*</span> block level elements are the only elements that can be floated or positioned absolutely. The moment you apply either <abbr title="Cascading Style Sheets">CSS</abbr> property to an inline element, it immediately becomes a block level element. Surprise!
-        </p>
-
-        <div class="divs-spans">
-          <div class="big-segue">
-            <h3>With that in mind, let's talk about <code class="language-html">&#60;div&#62;</code>s and <code class="language-html">&#60;spans&#62;</code>s for a moment.</h3>
-          </div>
-
-          <p class="block-inline-big-text"><code class="language-html">&#60;div&#62;</code>s and <code class="language-html">&#60;spans&#62;</code>s have <em>no</em> semantic value. Zero. None. They are generic wrappers&mdash;block/flow and inline/phrasing, respectively&mdash;for your CSS to take advantage of. Use a <code class="language-html">&#60;div&#62;</code> when you want a block level wrapper; use a <code class="language-html">&#60;span&#62;</code> when you want an inline wrapper. If your content has semantic meaning, use the appropriate document level tag for that content instead of one of these generic wrappers.</p>
-
-        </div><!-- END .divs-spans -->
-
-      </div><!-- END .inner-block -->
-    </section><!-- END .block-inline -->
-
     <div class="tag-glossary-intro">
       <div class="inner-block">
         <h3>Tag glossary</h3>
@@ -368,7 +315,7 @@ Moreover, it is their custom to deliberate about the gravest matters when they a
       <article id="article" class="tag-profile" data-tag="<article>">
         <div class="inner-block">
           <h3 class="tag-example">&#60;article&#62;</h3>
-          <p class="tag-description">Of all the semantic HTML5 tags, I find this one to be the least clear. In practice it's not tricky to use. The easiest way to think about the <code class="language-html">&#60;article&#62;</code> tag is to scrutinize your content. Is this content that can be syndicated <em>as is</em>? If whatever is in that <code class="language-html">&#60;article&#62;</code> is self contained and could be shared as a post on a blog, a comment, or an item that could appear in an RSS feed, then you should use this tag. If you're looking to just group thematically similar content that would be missing context on its own, then you probably want the <code class="language-html">&#60;section&#62;</code> tag above.</p>
+          <p class="tag-description">Of all the semantic HTML5 tags, I find this one to be the least clear. In practice it's not tricky to use. The easiest way to think about the <code class="language-html">&#60;article&#62;</code> tag is to scrutinize your content. Is this content that can be syndicated <em>as is?</em> If whatever is in that <code class="language-html">&#60;article&#62;</code> is self contained and could be shared as a post on a blog, a comment, or an item that could appear in an RSS feed, then you should use this tag. If you're looking to just group thematically similar content that would be missing context on its own, then you probably want the <code class="language-html">&#60;section&#62;</code> tag above.</p>
           <ul class="block-inline-label">
             <li class="highlighted-type">Block</li>
             <li>Inline</li>
@@ -388,6 +335,59 @@ Moreover, it is their custom to deliberate about the gravest matters when they a
       </article><!-- .tag-profile -->
 
     </section><!-- END .tag-glossary -->
+
+    <section class="block-inline">
+      <div class="inner-block">
+        <h3 class="block-inline-title">block vs inline</h3>
+
+        <p class="block-inline-big-text"><abbr title="Hypertext Markup Language">HTML</abbr>5 does away with the block/inline nomenclature and introduces a handful of different content categories&mdash;Metadata, Flow, Sectioning, Heading, Phrasing, Embedded, Interactive, and Form-associated. The elements in these new categories still <em>behave</em> like block or inline elements, though. Generally, block level content's closest analog is Flow content and inline's is Phrasing content.</p>
+
+        <div class="block-inline-cols clear">
+          <div class="block-col">
+            <p class="element-intro block-element-intro"><span>block</span> level elements&hellip;</p>
+            <p class="element-description">
+              <em>break up the flow of a document</em>. They cannot be placed next to other block level elements and create new lines above and below themselves.
+            </p>
+            <p class="they-continuation">they...</p>
+            <ul class="overview-list">
+              <li><span class="good-usage">can</span> be nested in other block elements</li>
+              <li><span class="good-usage">can</span> be given an explicit width/height</li>
+              <li><span class="good-usage">can</span> be floated<span class="asterisk">*</span></li>
+              <li><span class="good-usage">can</span> be positioned absolutely<span class="asterisk">*</span></li>
+              <li><span class="bad-usage">should not</span> be nested in inline elements</li>
+            </ul>
+          </div><!-- END .block-col -->
+          <div class="inline-col">
+            <p class="element-intro inline-element-intro"><span>inline</span> level elements&hellip;</p>
+            <p class="element-description">
+              <em>do not break up the flow of a document</em>. They can be placed next to other inline level elements and will not interrupt the flow inside of a block level parent.
+            </p>
+            <p class="they-continuation">they...</p>
+            <ul class="overview-list">
+              <li><span class="good-usage">can</span> be nested in block or inline elements</li>
+              <li><span class="bad-usage">cannot</span> be given an explicit width/height</li>
+              <li><span class="bad-usage">cannot</span> be floated<span class="asterisk">*</span></li>
+              <li><span class="bad-usage">cannot</span> be positioned absolutely<span class="asterisk">*</span></li>
+              <li><span class="bad-usage">should not</span> wrap block elements</li>
+            </ul><!-- END .overview-list -->
+          </div><!-- END .inline-col -->
+        </div><!-- END .cols -->
+
+        <p class="asterisk-explanation">
+        <span class="asterisk">*</span> block level elements are the only elements that can be floated or positioned absolutely. The moment you apply either <abbr title="Cascading Style Sheets">CSS</abbr> property to an inline element, it immediately becomes a block level element. Surprise!
+        </p>
+
+        <div class="divs-spans">
+          <div class="big-segue">
+            <h3>With that in mind, let's talk about <code class="language-html">&#60;div&#62;</code>s and <code class="language-html">&#60;spans&#62;</code>s</h3>
+          </div>
+
+          <p class="block-inline-big-text"><code class="language-html">&#60;div&#62;</code>s and <code class="language-html">&#60;spans&#62;</code>s have <em>no</em> semantic value. Zero. None. They are generic wrappers&mdash;block (or flow) and inline (or phrasing), respectively&mdash;for your CSS to take advantage of. Use a <code class="language-html">&#60;div&#62;</code> when you want a block level wrapper; use a <code class="language-html">&#60;span&#62;</code> when you want an inline wrapper. If your content has semantic meaning, use the appropriate document level tag for that content instead of one of these generic wrappers.</p>
+
+        </div><!-- END .divs-spans -->
+
+      </div><!-- END .inner-block -->
+    </section><!-- END .block-inline -->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>

@@ -18,9 +18,10 @@ $(document).ready(function() {
       },
 
       tagNav = function() {
-        if($('.tag-glossary').offset().top < $(window).scrollTop()) {
+        if($('.tag-glossary').offset().top < $(window).scrollTop() && ($('.tag-glossary').offset().top + $('.tag-glossary').height() - $('.glossary-nav').outerHeight()) > $(window).scrollTop()) {
           $('.glossary-nav').addClass('sticky');
 
+          // updates content in dropdown nav
           $('.tag-profile').each(function() {
             if( $('.glossary-nav').offset().top >= ($(this).offset().top - $(this).height()/3) ) {
               $('.glossary-nav .nav-button').text($(this).data('tag').toString());
