@@ -257,10 +257,7 @@ h3  {
 .block-inline-big-text {
   font-size: 24px;
   line-height: 1.5em;
-}
-
-.block-inline-big-text:nth-of-type(1) {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .block-inline .asterisk {
@@ -385,7 +382,7 @@ p.asterisk-explanation {
 .tag-menu ul {
   float: left;
   margin: 8px 8px 0 0;
-  width: 210px;
+  width: 209px;
 }
 
 .tag-menu ul:last-child {

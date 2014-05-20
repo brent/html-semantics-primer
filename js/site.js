@@ -81,7 +81,7 @@ $(document).ready(function() {
   });
 
   maximizeSections();
-  $('.tag-menu').localScroll();
+  $('.tag-menu').localScroll({ duration: 300 });
   hljs.initHighlightingOnLoad();
 
 });
