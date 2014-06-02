@@ -5,9 +5,9 @@
 }
 
 .clear:after {
-    clear: both;
-    content: " ";
-    display: table;
+  clear: both;
+  content: " ";
+  display: table;
 }
 
 body, p {
@@ -21,8 +21,8 @@ section {
 
 .inner-block {
   margin: 0 auto;
-  width: 62%;
   padding: 100px 0;
+  width: 62%;
 }
 
 abbr {
@@ -75,13 +75,13 @@ h3  {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid rgba(0,0,0,0.8);
+  bottom: -5px;
   height: 5px;
   left: 50%;
   margin-left: -10px;
   margin-top: 10px;
   position: absolute;
   width: 5px;
-  bottom: -5px;
 }
 
 .hljs {
@@ -349,12 +349,12 @@ p.asterisk-explanation {
 }
 
 .menu-point {
-  width: 0;
-  height: 0;
+  border-bottom: 10px solid rgba(34,34,34,0.95);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid rgba(34,34,34,0.95);
+  height: 0;
   margin: -18px auto 0;
+  width: 0;
 }
 
 .tag-menu {
@@ -429,7 +429,6 @@ p.asterisk-explanation {
   margin: 15px auto 0;
   padding-top: 5px;
   text-align: center;
-  /*width: 248px;*/
   width: 17%;
 }
 

@@ -31,7 +31,7 @@
 
         <div class="qa-group">
           <h3 class="overview-question">Don't forget about accessibility.</h3>
-          <p class="overview-answer">Writing semantic <abbr title="Hypertext Markup Language">HTML</abbr> automatically improves your site's accessibility. Users who visit your site using screen readers will appreciate the better experience. UX isn't just for the sighted. There's a lot more that goes into building very accessible pages than just being semantic. If you're interested in making your web sites as accessible as possible <a href="http://www.w3.org/TR/WAI-WEBCONTENT/" target="_blank">W3C's accessibility section is a good place to start</a>.</p>
+          <p class="overview-answer">Writing semantic <abbr title="Hypertext Markup Language">HTML</abbr> automatically improves your site's accessibility. Users who visit your site using screen readers will appreciate the better experience. UX isn't just for the sighted. There's a lot more that goes into building accessible pages than just being semantic. If you're interested in making your web sites as accessible as possible <a href="http://www.w3.org/TR/WAI-WEBCONTENT/" target="_blank">W3C's accessibility section is a good place to start</a>.</p>
         </div><!-- END .qa-group -->
       </div><!-- END .inner-block -->
     </section><!-- END .overview-questions -->
@@ -176,7 +176,7 @@ Moreover, it is their custom to deliberate about the gravest matters when they a
           <p class="tag-description">The fieldset allows you to group similar sections of forms. For example, if you have a registration form, you could wrap log in fields and user location fields in <code class="language-html">&#60;fieldsets&#62;</code> so they are separate at the document level. If you've been doing this with <code class="language-html">&#60;div&#62;</code>s, swap them out for these.</p>
           <pre>
             <code class="language-html">
-&#60;form action="" method="POST"&#62;
+&#60;form action="" method=""&#62;
 
   &#60;fieldset&#62;
     &#60;label for="username"&#62;Username&#60;/label&#62;
@@ -210,10 +210,10 @@ Moreover, it is their custom to deliberate about the gravest matters when they a
       <article id="label" class="tag-profile" data-tag="<label>">
         <div class="inner-block">
           <h3 class="tag-example">&#60;label&#62;</h3>
-          <p class="tag-description">The &#60;label&#62; tag should be used to label form elements. Use the <code class="language-html">for</code> attribute to link the label to its corresponding form element's <code class="language-html">id</code>.</p>
+          <p class="tag-description">The <code class="language-html">&#60;label&#62;</code> tag should be used to label form elements. Use the <code class="language-html">for</code> attribute to link the label to its corresponding form element's <code class="language-html">id</code>.</p>
           <pre>
             <code class="language-html">
-&#60;form&#62;
+&#60;form action="" method=""&#62;
 
   &#60;label for="username"&#62;Username&#60;/label&#62;
   &#60;input id="username" type="text" name="username"&#62;
@@ -304,7 +304,7 @@ Moreover, it is their custom to deliberate about the gravest matters when they a
       <article id="section" class="tag-profile" data-tag="<section>">
         <div class="inner-block">
           <h3 class="tag-example">&#60;section&#62;</h3>
-          <p class="tag-description">The <code class="language-html">&#60;section&#62;</code> tag might <em>look</em> like the semantic equivalent of a <code class="language-html">div</code> but it most certainly is not. The <code class="language-html">&#60;section&#62;</code> tag is used to define a group of related content in your document (usually with a heading)&mdash;think of it like a chapter in a book. If you're looking to wrap content in a block level element just for styling, use a <code class="language-html">div</code>. If that content thematically belongs together as a group in your document, then this might be the tag you want.</p>
+          <p class="tag-description">The <code class="language-html">&#60;section&#62;</code> tag might <em>look</em> like the semantic equivalent of a <code class="language-html">div</code> but it's not quite. The <code class="language-html">&#60;section&#62;</code> tag is used to define a group of related content in your document (usually with a heading)&mdash;think of it like a chapter in a book. If you're looking to wrap content in a block level element just for styling, use a <code class="language-html">&#60;div&#62;</code>. If that content thematically belongs together as a group in your document, then this might be the tag you want.</p>
           <ul class="block-inline-label">
             <li class="highlighted-type">Block</li>
             <li>Inline</li>
@@ -315,7 +315,7 @@ Moreover, it is their custom to deliberate about the gravest matters when they a
       <article id="article" class="tag-profile" data-tag="<article>">
         <div class="inner-block">
           <h3 class="tag-example">&#60;article&#62;</h3>
-          <p class="tag-description">Of all the semantic HTML5 tags, I find this one to be the least clear. In practice it's not tricky to use. The easiest way to think about the <code class="language-html">&#60;article&#62;</code> tag is to scrutinize your content. Is this content that can be syndicated <em>as is?</em> If whatever is in that <code class="language-html">&#60;article&#62;</code> is self contained and could be shared as a post on a blog, a comment, or an item that could appear in an RSS feed, then you should use this tag. If you're looking to just group thematically similar content that would be missing context on its own, then you probably want the <code class="language-html">&#60;section&#62;</code> tag above.</p>
+          <p class="tag-description">Of all the semantic HTML5 tags, I find this one to be the least clear. In practice it's not tricky to use. You have to really scrutinize your content when you're thinking about using an <code class="language-html">&#60;article&#62;</code>. Is this content that can be syndicated <em>as is?</em> If whatever is in that <code class="language-html">&#60;article&#62;</code> is self contained and could be shared as a post on a blog, a comment, or an item that could appear in an RSS feed, then you should use this tag. If you're looking to just group thematically similar content that would be missing context on its own, then you probably want the <code class="language-html">&#60;section&#62;</code> tag above.</p>
           <ul class="block-inline-label">
             <li class="highlighted-type">Block</li>
             <li>Inline</li>
@@ -326,7 +326,7 @@ Moreover, it is their custom to deliberate about the gravest matters when they a
       <article id="aside" class="tag-profile" data-tag="<aside>">
         <div class="inner-block">
           <h3 class="tag-example">&#60;aside&#62;</h3>
-          <p class="tag-description">The <code class="language-html">&#60;aside&#62;</code> is for supplementary content. When used outside of an <code class="language-html">&#60;article&#62;</code>, it should contain content related to the site itself&mdash;more nav, links to related content on the site or elsewhere, related ads, etc. When used inside of an <code class="language-html">&#60;article&#62;</code>, the content in the <code class="language-html">&#60;aside&#62;</code> should be related to the <code class="language-html">&#60;article&#62;</code> itself&mdash;perhaps a pullquote. The <code class="language-html">&#60;aside&#62;</code> is not for content that is simply meant to be adjacent to the main content.</p>
+          <p class="tag-description">The <code class="language-html">&#60;aside&#62;</code> is for supplementary content. When used outside of an <code class="language-html">&#60;article&#62;</code>, it should contain content related to the site itself&mdash;more nav, links to related content on the site or elsewhere, related ads, etc. When used inside of an <code class="language-html">&#60;article&#62;</code>, the content in the <code class="language-html">&#60;aside&#62;</code> should be related to the <code class="language-html">&#60;article&#62;</code> itself&mdash;perhaps a pullquote. The <code class="language-html">&#60;aside&#62;</code> is not for content that is simply meant to be next to the main content.</p>
           <ul class="block-inline-label">
             <li class="highlighted-type">Block</li>
             <li>Inline</li>
@@ -379,10 +379,10 @@ Moreover, it is their custom to deliberate about the gravest matters when they a
 
         <div class="divs-spans">
           <div class="big-segue">
-            <h3>With that in mind, let's talk about <code class="language-html">&#60;div&#62;</code>s and <code class="language-html">&#60;spans&#62;</code>s</h3>
+            <h3>With that in mind, let's talk about divs and spans</h3>
           </div>
 
-          <p class="block-inline-big-text"><code class="language-html">&#60;div&#62;</code>s and <code class="language-html">&#60;spans&#62;</code>s have <em>no</em> semantic value. Zero. None. They are generic wrappers&mdash;block (or flow) and inline (or phrasing), respectively&mdash;for your CSS to take advantage of. Use a <code class="language-html">&#60;div&#62;</code> when you want a block level wrapper; use a <code class="language-html">&#60;span&#62;</code> when you want an inline wrapper. If your content has semantic meaning, use the appropriate document level tag for that content instead of one of these generic wrappers.</p>
+          <p class="block-inline-big-text"><code class="language-html">&#60;div&#62;</code>s and <code class="language-html">&#60;span&#62;</code>s have <em>no</em> semantic value. Zero. None. They are generic wrappers&mdash;block (or flow) and inline (or phrasing), respectively&mdash;for your CSS to take advantage of. Use a <code class="language-html">&#60;div&#62;</code> when you want a block level wrapper; use a <code class="language-html">&#60;span&#62;</code> when you want an inline wrapper. If your content has semantic meaning, use the appropriate document level tag for that content instead of one of these generic wrappers.</p>
 
         </div><!-- END .divs-spans -->
 
