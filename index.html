@@ -26,7 +26,7 @@
 
         <div class="qa-group">
           <h3 class="overview-question">Why does it matter?</h3>
-          <p class="overview-answer">For the same reasons it matters to follow the conventions of &ldquo;real&rdquo; programming languages. Being semantic with your <abbr title="Hypertext Markup Language">HTML</abbr> ensures that you&mdash;and others&mdash;will get the most out of your markup. <abbr title="Hypertext Markup Language">HTML</abbr> is not a very strict language (you can thank its <abbr title="Extensible Markup Language">XML</abbr> roots for that) so being semantic is a good way to ensure proper usage, especially since it won't yell at you if you're wrong.
+          <p class="overview-answer">For the same reasons it matters to follow the conventions of &ldquo;real&rdquo; programming languages. Being semantic with your <abbr title="Hypertext Markup Language">HTML</abbr> ensures that you&mdash;and others&mdash;will get the most out of your markup. <abbr title="Hypertext Markup Language">HTML</abbr> is not a very strict language so being semantic is a good way to ensure proper usage, especially since it won't yell at you if you're wrong.
         </div><!-- END .qa-group -->
 
         <div class="qa-group">
@@ -52,27 +52,28 @@
           <div class="menu-point"></div>
           <ul>
             <li><a href="#p"><code class="language-html">&#60;p&#62;</code></a></li>
+            <li><a href="#img"><code class="language-html">&#60;img&#62;</code></a></li>
             <li><a href="#h"><code class="language-html">&#60;h1&#62;&hellip;&#60;h6&#62;</code></a></li>
             <li><a href="#ul-ol"><code class="language-html">&#60;ul&#62;, &#60;ol&#62;</code></a></li>
             <li><a href="#dl"><code class="language-html">&#60;dl&#62;</code></a></li>
-            <li><a href="#blockquote"><code class="language-html">&#60;blockquote&#62;</code></a></li>
           </ul>
           <ul>
+            <li><a href="#blockquote"><code class="language-html">&#60;blockquote&#62;</code></a></li>
             <li><a href="#q"><code class="language-html">&#60;q&#62;</code></a></li>
             <li><a href="#fieldset"><code class="language-html">&#60;fieldset&#62;</code></a></li>
             <li><a href="#label"><code class="language-html">&#60;label&#62;</code></a></li>
             <li><a href="#em"><code class="language-html">&#60;em&#62;</code></a></li>
-            <li><a href="#strong"><code class="language-html">&#60;strong&#62;</code></a></li>
           </ul>
           <ul>
+            <li><a href="#strong"><code class="language-html">&#60;strong&#62;</code></a></li>
             <li><a href="#code"><code class="language-html">&#60;code&#62;</code></a></li>
             <li><a href="#header"><code class="language-html">&#60;header&#62;</code></a></li>
             <li><a href="#footer"><code class="language-html">&#60;footer&#62;</code></a></li>
             <li><a href="#section"><code class="language-html">&#60;section&#62;</code></a></li>
-            <li><a href="#article"><code class="language-html">&#60;article&#62;</code></a></li>
           </ul>
           <ul>
             <li><a href="#aside"><code class="language-html">&#60;aside&#62;</code></a></li>
+            <li><a href="#article"><code class="language-html">&#60;article&#62;</code></a></li>
           </ul>
         </div><!-- END .tag-menu -->
       </nav><!-- END .glossary-nav -->
@@ -84,6 +85,17 @@
           <ul class="block-inline-label">
             <li class="highlighted-type">Block</li>
             <li>Inline</li>
+          </ul><!-- END .block-inline-label -->
+        </div><!-- END .inner-block -->
+      </article><!-- .tag-profile -->
+
+      <article id="img" class="tag-profile" data-tag="<img>">
+        <div class="inner-block">
+          <h3 class="tag-example">&#60;img&#62;</h3>
+          <p class="tag-description">The <code class="language-html">&#60;img&#62;</code> tag gets your images on the page. Somewhat overlooked fact&mdash;the <code class="language-html">alt</code> attribute is required for <code class="language-html">&#60;img&#62;</code>.</p>
+          <ul class="block-inline-label">
+            <li>Block</li>
+            <li class="highlighted-type">Inline</li>
           </ul><!-- END .block-inline-label -->
         </div><!-- END .inner-block -->
       </article><!-- .tag-profile -->
@@ -103,7 +115,7 @@
       <article id="ul-ol" class="tag-profile" data-tag="<ul>, <ol>">
         <div class="inner-block">
           <h3 class="tag-example">&#60;ul&#62;, &#60;ol&#62;</h3>
-          <p class="tag-description">These are your unordered and ordered lists. Use an &#60;ol&#62; when your list <em>must</em> be in order, like a recipe or directions, otherwise use a &#60;ul&#62; or a&hellip;</p>
+          <p class="tag-description">These are your unordered and ordered lists. Use an &#60;ol&#62; when your list <em>must</em> be in order, like a recipe or directions, otherwise use a &#60;ul&#62;.</p>
           <ul class="block-inline-label">
             <li class="highlighted-type">Block</li>
             <li>Inline</li>
